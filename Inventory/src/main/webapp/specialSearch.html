@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{ 
+	background:url(image1.jpg);
+	background-size: 100vw 100vh;
+	font-weight: 50;
+	font-size: 18px;
+	}
+	table{
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		line-height: 30px;
+		border: 3px solid #02649b;
+		border-collapse: collapse;
+		margin: 25px 0;
+		font-family: sans-serif;
+		min-width: 400px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.15);
+		background-color: rgba(179,220,224,0.15);
+	}
+	td[colspan="2"]{
+		line-height: 45px;
+	}
+	input[type=text]{
+		width: 97%;
+		height: 27px;
+	}
+	select{
+		width: 97%;
+		height: 32px;
+	}
+	input[type=submit]{
+		border: none;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		border: 3px solid #634e38;
+		cursor: pointer;
+		border-radius: 50px;
+		padding: 5px 10px;
+		margin: 0 5px;
+		transition: 1s;
+	}
+	input[type=submit]:active{
+		transform: scale(0.95);
+	}
+</style>
+</head>
+<body>
+<table border = 3>
+		<form name = f method = post action = customer.jsp>
+				<tr>
+					<td>Customer</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = nm >Name</option>
+							<option value = address >Address</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = delivery.jsp>
+				<tr>
+					<td>Delivery</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = status >Status</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = deliverydetail.jsp>
+				<tr>
+					<td>Delivery Detail</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = qty >Quantity</option>
+							<option value = expdate >Expired</option>
+							<option value = actdate >Manufactured</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = inventory.jsp>
+				<tr>
+					<td>Inventory</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = qty >Quantity</option>
+							<option value = minstock >Min Stock</option>
+							<option value = maxstock >Max Stock</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = location.jsp>
+				<tr>
+					<td>Location</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = nm >Name</option>
+							<option value = address >Address</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = order1.jsp>
+				<tr>
+					<td>Order 1</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = date1 >Date</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+	
+		<form name = f method = post action = orderdetail.jsp>
+				<tr>
+					<td>Order Detail</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = qty >Quantity</option>
+							<option value = adate1 >A Date 1</option>
+							<option value = rdate1 >R Date 1</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = product.jsp>
+				<tr>
+					<td>Product</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = barcode >Bar Code</option>
+							<option value = name >Name</option>
+							<option value = desc1 >Desc 1</option>
+							<option value = category >Category</option>
+							<option value = qty >Quantity</option>
+							<option value = weight >Weight</option>
+							<option value = refrigerated >Refrigerated</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = provider.jsp>
+				<tr>
+					<td>Provider</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = nm >Name</option>
+							<option value = address >Address</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = transfer.jsp>
+				<tr>
+					<td>Transfer</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = qty >Quantity</option>
+							<option value = sdate1 >Sdate1</option>
+							<option value = rdate1 >Rdate1</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+		
+		<form name = f method = post action = warehouse.jsp>
+				<tr>
+					<td>Warehouse</td>
+					<td>
+						<select name = s1>
+							<option value = id >Identification</option>
+							<option value = name >Name</option>
+							<option value = isrefrigerated >Refrigerated</option>
+							<option value = all >All</option>
+						</select>
+					</td>
+					<td>
+						<input type = text name = t1>
+					</td>
+					<td>
+						<input type = submit value = search name = b1>
+					</td>
+				</tr>
+		</form>
+</table>
+</body>
+</html>

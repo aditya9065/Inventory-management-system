@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{ 
+	background:url(image3.jpg);
+	background-size: 100vw 100vh;
+	font-weight: 50;
+	font-size: 18px;
+}
+table{
+	position: absolute;
+	top: 6%;
+	left: 15%;
+	line-height: 38px;
+	border: 3px solid #02649b;
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+	background-color: transparent;
+}
+
+
+input[type=button]{
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: 3px solid #2c6d85;
+	padding: 4px 7px;
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 0px 1px 4px black;
+	transition: 1s;
+}
+
+input[type=button]:active{
+	transform: scale(0.95);
+}
+
+	
+</style>
+</head>
+<body>
+	<table border=0>
+		<tr>
+			<td>Customer</td>
+			<td><input type = "button" onClick="Save_customer()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_customer()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_customer()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Delivery</td>
+			<td><input type = "button" onClick="Save_delivery()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_delivery()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_delivery()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Warehouse</td>
+			<td><input type = "button" onClick="Save_warehouse()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_warehouse()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_warehouse()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Delivery Detail</td>
+			<td><input type = "button" onClick="Save_deliverydetail()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_deliverydetail()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_deliverydetail()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Inventory</td>
+			<td><input type = "button" onClick="Save_inventory()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_inventory()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_inventory()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Location</td>
+			<td><input type = "button" onClick="Save_location()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_location()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_location()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Order</td>
+			<td><input type = "button" onClick="Save_order()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_order()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_order()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Order Detail</td>
+			<td><input type = "button" onClick="Save_orderdetail()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_orderdetail()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_orderdetail()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td><input type = "button" onClick="Save_product()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_product()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_product()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Provider</td>
+			<td><input type = "button" onClick="Save_provider()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_provider()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_provider()" value = "Delete"></td>
+		</tr>
+		<tr>
+			<td>Transfer</td>
+			<td><input type = "button" onClick="Save_transfer()" value = "Save"></td>
+			<td><input type = "button" onClick="Update_transfer()" value = "Update"></td>
+			<td><input type = "button" onClick="Delete_transfer()" value = "Delete"></td>
+		</tr>
+	</table>
+	<script>
+	    //Customer
+		function Save_customer(){
+			window.open("customer.html","_self");
+		}
+		function Update_customer(){
+			window.open("Updatecustomer.html","_self");
+		}
+		function Delete_customer(){
+			window.open("Deletecustomer.html","_self");
+		}
+		//delivery
+		function Save_delivery(){
+			window.open("delivery.html","_self");
+		}
+		function Update_delivery(){
+			window.open("Updatedelivery.html","_self");
+		}
+		function Delete_delivery(){
+			window.open("Deletedelivery.html","_self");
+		}
+		//warehouse
+		function Save_warehouse(){
+			window.open("warehouse.html","_self");
+		}
+		function Update_warehouse(){
+			window.open("Updatewarehouse.html","_self");
+		}
+		function Delete_warehouse(){
+			window.open("Deletewarehouse.html","_self");
+		}
+		//delivery detail
+		function Save_deliverydetail(){
+			window.open("deliverydetail.html","_self");
+		}
+		function Update_deliverydetail(){
+			window.open("Updatedeliverydetail.html","_self");
+		}
+		function Delete_deliverydetail(){
+			window.open("Deletedeliverydetail.html","_self");
+		}
+		//inventory
+		function Save_inventory(){
+			window.open("inventory.html","_self");
+		}
+		function Update_inventory(){
+			window.open("Updateinventory.html","_self");
+		}
+		function Delete_inventory(){
+			window.open("Deleteinventory.html","_self");
+		}
+		//location
+		function Save_location(){
+			window.open("location.html","_self");
+		}
+		function Update_location(){
+			window.open("Updatelocation.html","_self");
+		}
+		function Delete_location(){
+			window.open("Deletelocation.html","_self");
+		}
+		//order
+		function Save_order(){
+			window.open("order1.html","_self");
+		}
+		function Update_order(){
+			window.open("Updateorder1.html","_self");
+		}
+		function Delete_order(){
+			window.open("Deleteorder1.html","_self");
+		}
+		//order detai
+		function Save_orderdetail(){
+			window.open("orderdetail.html","_self");
+		}
+		function Update_orderdetail(){
+			window.open("Updateorderdetail.html","_self");
+		}
+		function Delete_orderdetail(){
+			window.open("Deleteorderdetail.html","_self");
+		}
+		//product
+		function Save_product(){
+			window.open("product.html","_self");
+		}
+		function Update_product(){
+			window.open("Updateproduct.html","_self");
+		}
+		function Delete_product(){
+			window.open("Deleteproduct.html","_self");
+		}
+		//provider
+		function Save_provider(){
+			window.open("provider.html","_self");
+		}
+		function Update_provider(){
+			window.open("Updateprovider.html","_self");
+		}
+		function Delete_provider(){
+			window.open("Deleteprovider.html","_self");
+		}
+		//transfer
+		function Save_transfer(){
+			window.open("transfer.html","_self");
+		}
+		function Update_transfer(){
+			window.open("Updatetransfer.html","_self");
+		}
+		function Delete_transfer(){
+			window.open("Deletetransfer.html","_self");
+		}
+	</script>
+</body>
+</html>

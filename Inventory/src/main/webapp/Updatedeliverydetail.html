@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel ="stylesheet" href ="./style.css">
+</head>
+<body>
+<form name =f method=post action="deliverydetail.jsp">
+<table border=3>
+<tr>
+<th colspan=2>DELIVERYDETAIL</th>
+</tr>
+<tr>
+<td>ID</td>
+<td><input type=text name=t1></td>
+</tr>
+<tr>
+<td>QTY</td>
+<td><input type=text name=t2></td>
+</tr>
+<tr>
+<td>EXPDATE</td>
+<td><input type=text name=t3></td>
+</tr>
+<tr>
+<td>ACTDATE</td>
+<td><input type=text name=t4></td>
+</tr>
+<tr>
+<td colspan=2><input type=reset value=New><input type=submit value=Update name=b1><input type=submit value=Allsearch name=b1><input type=submit value=Psearch name=b1><input type=button value=Home name=b1 onClick = "goHome()"><input type=button value="Special Search" name=b1 onClick = "spl()"></td>
+</tr>
+</table>
+</form>
+<script>
+	function goHome(){
+		window.open("myMenu.html","_self");
+	}
+	function spl(){
+		window.open("specialSearch.html","_self");
+	}
+</script>
+</body>
+</html>
